@@ -27,3 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+    }, { passive: false });
+  });
