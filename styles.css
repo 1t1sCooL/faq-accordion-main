@@ -99,7 +99,7 @@ body {
     }
 }
 @media (hover: none) and (pointer: coarse) {
-    .faq-question {
+    .faq-item {
         -webkit-tap-highlight-color: transparent;
 
         outline: none;
@@ -114,9 +114,11 @@ body {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         transform: translateZ(0);
+
     }
-    .faq-question:active {
-        background-color: transparent;
+    .faq-item:active {
+        background-color: transparent !important;
+        opacity: 1 !important;
       }
   }
   @media (hover: hover) and (pointer: fine) {
