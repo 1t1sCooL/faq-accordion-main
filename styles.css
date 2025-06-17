@@ -101,7 +101,7 @@ body {
 @media (hover: none) and (pointer: coarse) {
     .faq-question {
         -webkit-tap-highlight-color: transparent;
-        tap-highlight-color: transparent;
+
         outline: none;
         user-select: none;
         
@@ -110,7 +110,13 @@ body {
         -ms-user-select: none;
 
         -webkit-touch-callout: none;
+        
+        backface-visibility: hidden;
+        transform: translateZ(0);
     }
+    .faq-question:active {
+        background-color: transparent;
+      }
   }
   @media (hover: hover) and (pointer: fine) {
     .faq-question:focus-visible {
