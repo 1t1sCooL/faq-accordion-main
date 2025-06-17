@@ -126,4 +126,27 @@ body {
         color: hsl(281, 83%, 54%);
         transition: color .3s ease;
     }
-  } 
+  }
+  @media (max-weight: 1024px){
+    .faq-question {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        touch-action: manipulation;
+        -webkit-touch-callout: none;
+      }
+      .toggle-icon {
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-drag: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+    .faq-question:active{
+        color: hsl(281, 83%, 54%);
+        transition: color .3s ease;
+    }
+  }  
