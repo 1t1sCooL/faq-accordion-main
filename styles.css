@@ -98,7 +98,13 @@ body {
         background-image: url('assets/images/background-pattern-mobile.svg');
     }
 }
-@media (hover: none) and (pointer: coarse) {
+  @media (hover: hover) and (pointer: fine) {
+    .faq-question:focus-visible {
+      outline: 2px solid var(--Purple500);
+      outline-offset: 4px;
+    }
+  }
+  @media (hover: none) and (pointer: coarse) {
     .faq-question {
         user-select: none;
         -webkit-user-select: none;
@@ -119,11 +125,5 @@ body {
     .faq-question:active{
         color: hsl(281, 83%, 54%);
         transition: color .3s ease;
-    }
-  }
-  @media (hover: hover) and (pointer: fine) {
-    .faq-question:focus-visible {
-      outline: 2px solid var(--Purple500);
-      outline-offset: 4px;
     }
   } 
