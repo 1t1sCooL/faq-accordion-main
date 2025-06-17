@@ -110,7 +110,8 @@ body {
         -ms-user-select: none;
 
         -webkit-touch-callout: none;
-        
+
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         transform: translateZ(0);
     }
