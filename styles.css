@@ -118,6 +118,10 @@ body {
     .faq-question {
         touch-action: manipulation;
     }
+    .faq-question:focus{
+        color: hsl(281, 83%, 54%);
+        transition: color .3s ease;
+    }
     .faq-item:active {
         background-color: transparent !important;
         opacity: 1 !important;
