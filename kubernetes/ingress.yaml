@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: faq-accordion-main
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: "traefik"
+spec:
+  rules:
+    - host: mmalabugin.ru
+      http:
+        paths:
+          - path: /FAQAccordion
+            pathType: Prefix
+            backend:
+              service:
+                name: faq-accordion-main
+                port:
+                  number: 80
+  tls:
+    - hosts:
+        - mmalabugin.ru
+      secretName: main-page-tls
